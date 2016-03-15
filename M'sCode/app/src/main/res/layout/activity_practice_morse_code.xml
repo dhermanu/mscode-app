@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="13">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="2">
+        <LinearLayout
+            android:layout_weight=".9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="15dp"
+                android:textColor="#ff3aff52"
+                android:text="Buy This app on the App store"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1.1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="15dp"
+                android:textColor="#ff033e"
+                android:text="Attempts Remaining:"
+                />
+            <TextView
+                android:id="@+id/lives"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="15dp"
+                android:layout_gravity="right"
+                android:textSize="30dp"
+                android:textColor="#ffffff"
+                android:text="#"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/timer"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal"
+        android:textSize="20pt"
+        android:textColor="#ffffff"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+
+    <TextView
+        android:id="@+id/curr_char"
+        android:layout_weight="7"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="40pt"
+        android:text="Get Ready!"
+        />
+
+    <TextView
+        android:id="@+id/entered"
+        android:layout_weight="1"
+        android:layout_width="120dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:gravity="bottom|center"
+        android:background="@drawable/back_inputs"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:textColor="#000000"
+        android:textSize="40sp" />
+
+    <LinearLayout
+        android:id="@+id/controls"
+        android:layout_weight="2"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/buttons"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/back"
+        android:text="Buttons Displayed Here"
+        />
+    </LinearLayout>
+</LinearLayout>

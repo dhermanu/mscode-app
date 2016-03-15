@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.CustomTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textAppearanceButton">@style/CustomTheme.ButtonTextAppearance</item>
+    </style>
+
+    <style name="CustomTheme.ButtonTextAppearance" parent="@style/Base.TextAppearance.AppCompat.Button">
+        <item name="textAllCaps">false</item>
+    </style>
+
+</resources>

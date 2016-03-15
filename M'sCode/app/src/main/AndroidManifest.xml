@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cse190.mscode" >
+
+    <!-- Allows access to the vibrator -->
+    <uses-permission
+        android:name="android.permission.VIBRATE"
+        android:permissionGroup="android.permission-group.HARDWARE_CONTROLS"
+        android:protectionLevel="normal" />
+
+    <!-- Allows access to the flashlight -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.camera.flash" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PracticeMorseCode"
+            android:label="@string/title_activity_practice_morse_code"
+            android:parentActivityName=".menu_practice"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cse190.mscode.menu_practice" />
+        </activity>
+        <activity
+            android:name=".TranslateMorseCode"
+            android:label="@string/title_activity_translate_morse_code"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cse190.mscode.MainActivity" />
+        </activity>
+        <activity
+            android:name=".LearnMorseCode"
+            android:label="@string/title_activity_learn_morse_code"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cse190.mscode.MainActivity" />
+        </activity>
+        <activity
+            android:name=".DecodeMorseCode"
+            android:label="@string/title_activity_translate_morse_code"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cse190.mscode.MainActivity" />
+        </activity>
+        <activity
+            android:name=".menu_practice"
+            android:label="@string/title_activity_menu_practice"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cse190.mscode.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

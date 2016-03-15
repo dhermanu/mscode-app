@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:keyWidth="90%p"
+    android:keyHeight="8%p">
+
+    <Row
+        android:keyWidth="45%p">
+        <Key android:codes="46"    android:keyLabel="." android:keyEdgeFlags="left" />
+        <Key android:codes="45"    android:keyLabel="-" />
+    </Row>
+    <!-- Space button goes in the middle because it makes it easier to reach it when typing. -->
+    <Row>
+        <Key android:codes="32"    android:keyLabel="SPACE" android:keyEdgeFlags="left"  />
+    </Row>
+    <Row
+        android:keyWidth="30%p">
+        <!-- Number assignment to KEYCODE_CLEAR: 28 -->
+        <Key android:codes="28"    android:keyLabel="CLEAR" android:isRepeatable="false" />
+        <Key android:codes="66"    android:keyLabel="ENTER" android:isRepeatable="false" />
+        <Key android:codes="-5"    android:keyLabel="DELETE" android:isRepeatable="true" />
+    </Row>
+</Keyboard>

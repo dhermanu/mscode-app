@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="dotGame" type="id"/>
+    <item name="dashGame" type="id"/>
+    <item name="letter1Game" type="id"/>
+    <item name="letter2Game" type="id"/>
+    <item name="letter3Game" type="id"/>
+    <item name="letter4Game" type="id"/>
+    <item name="resetGame" type="id" />
+</resources>
